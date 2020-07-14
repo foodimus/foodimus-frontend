@@ -1,0 +1,65 @@
+body {
+   font-size: 16px;
+   font-size: 100%;
+   font-family: Proxima Nova;
+   /* background-color: #5a52c0; */
+}
+
+/* HAMBURGER */
+
+/* HEADER */
+
+.header__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.header__nav {
+   display: block;
+   position: absolute;
+   top: 100%;
+   left: 0.625em;
+   right: 0.625em;
+}
+
+.header__list {
+   width: 100%;
+   padding: 0.625em;
+   display: block;
+   border-radius: 10px;
+   box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+   background-color: #5a52c0;
+}
+
+.header__list-item {
+}
+
+.header__list-link {
+   padding: 0.625em;
+   display: block;
+   font-size: 1em;
+   font-weight: bold;
+   color: #fff;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .header__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .header__list-item {
+      margin: 0 0.5em;
+   }
+
+}
