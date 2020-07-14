@@ -32,8 +32,8 @@ body {
 /* HAMBURGER */
 
 .c-hamburger {
-   width: 2.25em;
-   height: 2.25em;
+   width: 2.875em;
+   height: 2.875em;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -55,6 +55,7 @@ body {
    content: "\f0c9";
    font-family: "Font Awesome 5 Free";
    font-weight: bold;
+   font-size: 1.25em;
    color: #5a52c0;
 }
 
@@ -90,7 +91,7 @@ body {
 }
 
 .header__logo {
-   width: 6.875em;
+   width: 8em;
 }
 
 .header__nav {
@@ -132,7 +133,7 @@ body {
 .header__list-link {
    padding: 0.75em 0;
    display: block;
-   font-size: 1em;
+   font-size: 1.125em;
    font-weight: bold;
    color: #fff;
 }
