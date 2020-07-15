@@ -8,7 +8,18 @@ body {
 
 /* HEADINGS */
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
    margin-bottom: 0.625rem;
    font-family: Gilroy, sans-serif;
    font-weight: bold;
@@ -140,6 +151,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    background-color: #5a52c0;
 }
 
+.c-hero--splitted {
+   background-image: radial-gradient(circle at 160% 50%, #f59ab5 60%, #5a52c0 0);
+}
+
 .hero__headline {
    margin-bottom: 1.25rem;
    font-size: 2.3125em;
@@ -163,6 +178,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
    .c-hero {
       padding: 7em 0;
+   }
+
+   .c-hero--splitted {
+      background-image: radial-gradient(circle at 120% 80%, #f59ab5 52%, #5a52c0 0);
    }
 
    .hero__headline {
@@ -189,6 +208,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
    .c-hero {
       padding: 9em 0;
+   }
+
+   .c-hero--splitted {
+      background-image: radial-gradient(circle at 100% 100%, #f59ab5 50%, #5a52c0 0);
    }
 
    .hero__headline--large {
