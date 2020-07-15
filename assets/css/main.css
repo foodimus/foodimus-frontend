@@ -145,8 +145,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    font-size: 2.3125em;
 }
 
+.hero__headline--large {
+   font-size: 2.875em;
+}
+
 .hero__subline {
-   font-size: 1em;
+   font-size: 1.125em;
    line-height: 1.35em;
 }
 
@@ -162,6 +166,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
    }
 
    .hero__headline {
+      font-size: 3.125em;
+   }
+
+   .hero__headline--large {
       font-size: 3.5em;
    }
 
@@ -183,7 +191,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
       padding: 9em 0;
    }
 
-   .hero__headline {
+   .hero__headline--large {
       font-size: 4.1875em;
    }
 
