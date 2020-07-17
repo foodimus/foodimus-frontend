@@ -29,3 +29,11 @@
    font-weight: bold;
    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Reklame script demo';
+    src: url('../fonts/reklame-script-demo/regular.woff2') format('woff2'),
+         url('../fonts/reklame-script-demo/regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
