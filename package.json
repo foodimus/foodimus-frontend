@@ -1,0 +1,22 @@
+{
+  "name": "foodimus-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foodimus/foodimus-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foodimus/foodimus-frontend/issues"
+  },
+  "homepage": "https://github.com/foodimus/foodimus-frontend#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}

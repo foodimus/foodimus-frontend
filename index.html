@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/fonts.css">
       <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.css">
+      <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
 
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -158,7 +159,7 @@
 
       <div class="container">
 
-         <div class="c-jumbotron c-jumbotron--overlap-right u-background--green u-extension--green">
+         <div class="c-jumbotron u-background--green u-extension--green c-jumbotron-overlap--lg">
 
             <div class="c-jumbotron__inner">
 
@@ -169,134 +170,218 @@
 
                </div>
 
-               <div class="row">
+               <div class="c-carousel c-carousel--mealplans glide">
 
-                  <div class="col-md-4 col-lg-3">
-                     <article class="c-mealplan" onclick="location.href = '#'">
+                  <div class="glide__track u-large-space-below c-jumbotron-overlap-inner--lg" data-glide-el="track">
 
-                        <div class="c-mealplan__inner">
+                     <div class="glide__slides">
 
-                           <header class="c-mealplan__header">
+                        <div class="c-carousel__item glide__slide">
+                              <article class="c-mealplan" onclick="location.href = '#'">
 
-                              <div class="c-mealplan__user">
-                                 <a href="#" class="c-mealplan__avatar">
-                                    <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
-                                 </a>
-                                 <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                 <div class="c-mealplan__inner">
+
+                                    <header class="c-mealplan__header">
+
+                                       <div class="c-mealplan__user">
+                                          <a href="#" class="c-mealplan__avatar">
+                                             <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
+                                          </a>
+                                          <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                       </div>
+
+                                       <div class="c-mealplan__duration">10 days</div>
+
+                                    </header>
+
+                                    <footer class="c-mealplan__footer">
+                                       <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
+                                       <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
+                                    </footer>
+
+                                 </div>
+
+                                 <div class="c-mealplan__cover">
+                                    <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                                 </div>
+
+                              </article>
+                           </div>
+
+                        <div class="c-carousel__item glide__slide">
+                              <article class="c-mealplan" onclick="location.href = '#'">
+
+                                 <div class="c-mealplan__inner">
+
+                                    <header class="c-mealplan__header">
+
+                                       <div class="c-mealplan__user">
+                                          <a href="#" class="c-mealplan__avatar">
+                                             <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
+                                          </a>
+                                          <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                       </div>
+
+                                       <div class="c-mealplan__duration">10 days</div>
+
+                                    </header>
+
+                                    <footer class="c-mealplan__footer">
+                                       <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
+                                       <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
+                                    </footer>
+
+                                 </div>
+
+                                 <div class="c-mealplan__cover">
+                                    <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                                 </div>
+
+                              </article>
+                           </div>
+
+                        <div class="c-carousel__item glide__slide">
+
+                           <article class="c-mealplan" onclick="location.href = '#'">
+
+                              <div class="c-mealplan__inner">
+
+                                 <header class="c-mealplan__header">
+
+                                    <div class="c-mealplan__user">
+                                       <a href="#" class="c-mealplan__avatar">
+                                          <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
+                                       </a>
+                                       <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                    </div>
+
+                                    <div class="c-mealplan__duration">10 days</div>
+
+                                 </header>
+
+                                 <footer class="c-mealplan__footer">
+                                    <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
+                                    <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
+                                 </footer>
+
                               </div>
 
-                              <div class="c-mealplan__duration">10 days</div>
+                              <div class="c-mealplan__cover">
+                                 <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                              </div>
 
-                           </header>
-
-                           <footer class="c-mealplan__footer">
-                              <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
-                              <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
-                           </footer>
-
+                           </article>
                         </div>
 
-                        <div class="c-mealplan__cover">
-                           <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                        <div class="c-carousel__item glide__slide">
+
+                           <article class="c-mealplan" onclick="location.href = '#'">
+
+                              <div class="c-mealplan__inner">
+
+                                 <header class="c-mealplan__header">
+
+                                    <div class="c-mealplan__user">
+                                       <a href="#" class="c-mealplan__avatar">
+                                          <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
+                                       </a>
+                                       <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                    </div>
+
+                                    <div class="c-mealplan__duration">10 days</div>
+
+                                 </header>
+
+                                 <footer class="c-mealplan__footer">
+                                    <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
+                                    <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
+                                 </footer>
+
+                              </div>
+
+                              <div class="c-mealplan__cover">
+                                 <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                              </div>
+
+                           </article>
                         </div>
 
-                     </article>
+                        <div class="c-carousel__item glide__slide">
+
+                           <article class="c-mealplan" onclick="location.href = '#'">
+
+                              <div class="c-mealplan__inner">
+
+                                 <header class="c-mealplan__header">
+
+                                    <div class="c-mealplan__user">
+                                       <a href="#" class="c-mealplan__avatar">
+                                          <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
+                                       </a>
+                                       <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                    </div>
+
+                                    <div class="c-mealplan__duration">10 days</div>
+
+                                 </header>
+
+                                 <footer class="c-mealplan__footer">
+                                    <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
+                                    <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
+                                 </footer>
+
+                              </div>
+
+                              <div class="c-mealplan__cover">
+                                 <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                              </div>
+
+                           </article>
+                        </div>
+
+                        <div class="c-carousel__item glide__slide">
+
+                           <article class="c-mealplan" onclick="location.href = '#'">
+
+                              <div class="c-mealplan__inner">
+
+                                 <header class="c-mealplan__header">
+
+                                    <div class="c-mealplan__user">
+                                       <a href="#" class="c-mealplan__avatar">
+                                          <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
+                                       </a>
+                                       <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
+                                    </div>
+
+                                    <div class="c-mealplan__duration">10 days</div>
+
+                                 </header>
+
+                                 <footer class="c-mealplan__footer">
+                                    <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
+                                    <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
+                                 </footer>
+
+                              </div>
+
+                              <div class="c-mealplan__cover">
+                                 <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
+                              </div>
+
+                           </article>
+                        </div>
+
+                     </div>
+
                   </div>
 
-                  <div class="col-md-4 col-lg-3">
-                     <article class="c-mealplan" onclick="location.href = '#'">
-
-                        <div class="c-mealplan__inner">
-
-                           <header class="c-mealplan__header">
-
-                              <div class="c-mealplan__user">
-                                 <a href="#" class="c-mealplan__avatar">
-                                    <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
-                                 </a>
-                                 <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
-                              </div>
-
-                              <div class="c-mealplan__duration">10 days</div>
-
-                           </header>
-
-                           <footer class="c-mealplan__footer">
-                              <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
-                              <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
-                           </footer>
-
-                        </div>
-
-                        <div class="c-mealplan__cover">
-                           <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
-                        </div>
-
-                     </article>
-                  </div>
-
-                  <div class="col-md-4 col-lg-3">
-                     <article class="c-mealplan" onclick="location.href = '#'">
-
-                        <div class="c-mealplan__inner">
-
-                           <header class="c-mealplan__header">
-
-                              <div class="c-mealplan__user">
-                                 <a href="#" class="c-mealplan__avatar">
-                                    <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
-                                 </a>
-                                 <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
-                              </div>
-
-                              <div class="c-mealplan__duration">10 days</div>
-
-                           </header>
-
-                           <footer class="c-mealplan__footer">
-                              <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
-                              <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
-                           </footer>
-
-                        </div>
-
-                        <div class="c-mealplan__cover">
-                           <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
-                        </div>
-
-                     </article>
-                  </div>
-
-                  <div class="col-md-4 col-lg-3">
-                     <article class="c-mealplan" onclick="location.href = '#'">
-
-                        <div class="c-mealplan__inner">
-
-                           <header class="c-mealplan__header">
-
-                              <div class="c-mealplan__user">
-                                 <a href="#" class="c-mealplan__avatar">
-                                    <img src="/assets/images/demo/profile-pic.jpg" class="c-mealplan__avatar-image" />
-                                 </a>
-                                 <a href="#" class="c-mealplan__handle u-text--white u-link s2">@nimaidelgado</a>
-                              </div>
-
-                              <div class="c-mealplan__duration">10 days</div>
-
-                           </header>
-
-                           <footer class="c-mealplan__footer">
-                              <a href="#" class="c-mealplan__title t4 u-text--white u-link u-text--bold u-small-space-below">Tropical whole food meal plan</a>
-                              <a href="#" class="c-mealplan__button o-btn o-btn--secondary o-btn--small d-block">Visit meal plan</a>
-                           </footer>
-
-                        </div>
-
-                        <div class="c-mealplan__cover">
-                           <img src="/assets/images/demo/meal-plan-cover.jpg" class="c-mealplan__cover-image" />
-                        </div>
-
-                     </article>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <a href="#" class="u-text--white u-link">Checkout all meal plans</a>
+                     <div class="d-flex" data-glide-el="controls">
+                        <button class="o-nav-arrow o-nav-arrow--prev" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                        <button class="o-nav-arrow o-nav-arrow--next" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+                     </div>
                   </div>
 
                </div>
@@ -311,6 +396,7 @@
       </div>
 
       <script src="assets/js/jquery.min.js"></script>
+      <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
       <script src="assets/js/main.js"></script>
 
    </body>

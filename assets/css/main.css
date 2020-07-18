@@ -83,6 +83,21 @@ h6 {
 
 /* SPACING UTILS */
 
+.u-space-around,
+.u-space-around--sm {
+   margin: 1.25rem;
+}
+
+.u-small-space-around,
+.u-small-space-around--sm {
+   margin: 0.625rem;
+}
+
+.u-large-space-around,
+.u-large-space-around--sm {
+   margin: 1.875rem;
+}
+
 .u-space-below,
 .u-space-below--sm {
    margin-bottom: 1.25rem;
@@ -98,19 +113,19 @@ h6 {
    margin-bottom: 1.875rem;
 }
 
-.u-space-around,
-.u-space-around--sm {
-   margin: 1.25rem;
+.u-space-right,
+.u-space-right--sm {
+   margin-right: 1.25rem;
 }
 
-.u-small-space-around,
-.u-small-space-around--sm {
-   margin: 0.625rem;
+.u-small-space-right,
+.u-small-space-right--sm {
+   margin-right: 0.625rem;
 }
 
-.u-large-space-around,
-.u-large-space-around--sm {
-   margin: 1.875rem;
+.u-large-space-right,
+.u-large-space-right--sm {
+   margin-right: 1.875rem;
 }
 
 /* Medium devices */
@@ -159,6 +174,7 @@ h6 {
    line-height: 0;
    text-align: center;
    color: #fff;
+   cursor: pointer;
    transition: 0.1s;
 }
 
@@ -182,6 +198,29 @@ h6 {
 
 .o-btn--transparent:hover {
    background-color: rgba(255,255,255,0.05);
+}
+
+/* NAV ARROWS */
+
+.o-nav-arrow {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   border: none;
+   background: #f05478;
+   cursor: pointer;
+   color: #fff;
+}
+
+.o-nav-arrow:focus {
+   outline: none;
+}
+
+.o-nav-arrow--prev {
+   margin-right: 0.25em;
 }
 
 /* HAMBURGER */
@@ -316,14 +355,8 @@ h6 {
 
 /* JUMBOTRON */
 
-/* Medium devices */
-@media (min-width: 768px) {
-
-   .c-jumbotron {
-      padding: 1.875em;
-      border-radius: 10px;
-   }
-
+.c-jumbotron {
+   padding: 1.875em;
 }
 
 /* Large devices */
@@ -331,16 +364,25 @@ h6 {
 
    .c-jumbotron {
       padding: 2.5em;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
    }
 
-   .c-jumbotron--overlap-right {
-      margin-right: 7.5em;
+   .c-jumbotron-overlap--lg {
+      margin-right: 6.25em;
    }
 
-   .c-jumbotron--overlap-right .c-jumbotron__inner {
-      margin-right: -7.5em;
+   .c-jumbotron-overlap-inner--lg {
+      margin-right: -6.25em;
    }
 
+}
+
+/* CAROUSEL */
+
+.c-carousel--mealplans .c-carousel__item {
+   padding: 1.25em 0;
 }
 
 /* MEAL PLAN */
