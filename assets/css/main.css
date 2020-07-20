@@ -87,6 +87,10 @@ h6 {
    color: #4b3e63;
 }
 
+.u-text--light-purple {
+   color: #5952c1;
+}
+
 .u-text--pink {
    color: #f59ab5;
 }
@@ -445,7 +449,6 @@ h6 {
 
 }
 
-
 /* CAROUSEL */
 
 .c-carousel--mealplans .c-carousel__items {
@@ -590,6 +593,10 @@ h6 {
 }
 
 /* LOGO */
+
+.c-logo {
+   display: block;
+}
 
 .c-logo svg path {
    fill: #fff;
@@ -865,4 +872,27 @@ h6 {
       display: none;
    }
 
+}
+
+/* FOOTER */
+
+.c-footer {
+   padding: 4em 0;
+}
+
+.c-footer__logo {
+   width: 8em;
+}
+
+.c-footer__list-item {
+   margin-bottom: 0.5em;
+}
+
+.c-footer__top {
+   padding-bottom: 1.875em;
+}
+
+.c-footer__bottom {
+   padding: 0.625em 0;
+   border-top: 1px solid rgba(89,82,193, 0.25);
 }
