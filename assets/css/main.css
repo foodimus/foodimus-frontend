@@ -204,6 +204,12 @@ h6 {
 
 }
 
+/* MEDIA */
+
+.o-image {
+   width: 100%;
+}
+
 
 /* BUTTONS */
 
@@ -307,7 +313,7 @@ h6 {
 /* SECTION */
 
 .o-section {
-   padding: 1.25em 0;
+   padding: 1.875em 0;
 }
 
 .o-section--large-space {
