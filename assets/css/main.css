@@ -21,11 +21,11 @@ h6 {
 }
 
 .t1 {
-   font-size: 3.125rem;
+   font-size: 2.3125rem;
 }
 
 .t2 {
-   font-size: 2.3125rem;
+   font-size: 1.875rem;
 }
 
 .t3 {
@@ -46,6 +46,27 @@ h6 {
 
 .s3 {
    font-size: 0.9375em;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+   .t1 {
+      font-size: 3.125rem;
+   }
+
+   .t2 {
+      font-size: 2.3125rem;
+   }
+
+   .t3 {
+      font-size: 1.5rem;
+   }
+
+   .t4 {
+      font-size: 1.125rem;
+   }
+
 }
 
 /* TEXT UTILS */
@@ -80,8 +101,7 @@ h6 {
    box-shadow: -999px 0 0 #29b49c;
 }
 
-
-/* SPACING UTILS */
+/* LAYOUT & SPACING UTILS */
 
 .u-space-around,
 .u-space-around--sm {
@@ -160,7 +180,16 @@ h6 {
       margin-bottom: 1.875em;
    }
 
+   .u-container-overlap {
+      margin-right: 6.25em;
+   }
+
+   .u-inner-overlap {
+      margin-right: -6.25em;
+   }
+
 }
+
 
 /* BUTTONS */
 
@@ -357,32 +386,22 @@ h6 {
 
 .c-jumbotron {
    padding: 1.875em;
+   margin-left: -1.25em;
+   margin-right: -1.25em;
 }
 
-/* Large devices */
-@media (min-width: 992px) {
+/* Medium devices */
+@media (min-width: 768px) {
 
    .c-jumbotron {
+      margin-left: 0;
+      margin-right: 0;
       padding: 2.5em;
       -moz-border-radius: 10px;
       -webkit-border-radius: 10px;
       border-radius: 10px;
    }
 
-   .c-jumbotron-overlap--lg {
-      margin-right: 6.25em;
-   }
-
-   .c-jumbotron-overlap-inner--lg {
-      margin-right: -6.25em;
-   }
-
-}
-
-/* CAROUSEL */
-
-.c-carousel--mealplans .c-carousel__item {
-   padding: 1.25em 0;
 }
 
 /* MEAL PLAN */
@@ -470,6 +489,7 @@ h6 {
 }
 
 .c-mealplan__footer {
+   width: 100%;
    position: absolute;
    bottom: 1.25em;
 }
