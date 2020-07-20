@@ -20,6 +20,4 @@ jQuery(document).ready(function($) {
       $('.js-header-nav').toggleClass('is-open');
    });
 
-
-
 });
