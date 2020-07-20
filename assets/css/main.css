@@ -404,6 +404,26 @@ h6 {
 
 }
 
+/* CAROUSEL */
+
+.c-carousel--mealplans .c-carousel__items {
+   padding-top: 1.5em;
+}
+
+.c-carousel--mealplans .c-carousel__item {
+   padding: 0 0.625em 0.625em 0.625em;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+   .c-carousel--mealplans {
+      margin-left: -0.625em;
+      margin-right: -0.625em;
+   }
+
+}
+
 /* MEAL PLAN */
 
 .c-mealplan {

@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
    const glide = new Glide('.glide', {
       type: 'carousel',
       perView: 4,
-      gap: 20,
+      gap: 0,
       breakpoints: {
          800: {
-            perView: 3
+            perView: 2
          },
          600: {
             perView: 1
