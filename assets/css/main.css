@@ -231,6 +231,11 @@ h6 {
    transition: 0.1s;
 }
 
+.o-btn--block {
+   width: 100%;
+   display: block;
+}
+
 .o-btn:hover {
    text-decoration: underline;
 }
@@ -251,6 +256,58 @@ h6 {
 
 .o-btn--transparent:hover {
    background-color: rgba(255,255,255,0.05);
+}
+
+/* FORM ELEMENTS */
+
+.o-input {
+   width: 100%;
+   padding: 0.625em 0.75em;
+   border-radius: 3px;
+   border: 1px solid rgba(75, 62, 99, 0.4);
+   font-size: 0.875em;
+}
+
+.o-input:focus {
+   -moz-box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+   -webkit-box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+   background-color: #fff;
+   border-color: #80bdff;
+   outline: 0;
+   color: #495057;
+}
+
+.o-input--large {
+   padding: 0.875em 1em;
+   font-size: 0.9375em;
+}
+
+.o-input--bottom {
+   border-top: none;
+   border-right: none;
+   border-left: none;
+}
+
+.o-input--bottom:focus {
+   border-bottom: 1px solid rgba(75, 62, 99, 0.9);
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+/* LOGO */
+
+.c-logo {
+   display: block;
+}
+
+.c-logo svg path {
+   fill: #fff;
+}
+
+.c-logo--dark svg path {
+   fill: #5a52c0;
 }
 
 /* NAV ARROWS */
@@ -592,19 +649,6 @@ h6 {
    transform: scale(1.1);
 }
 
-/* LOGO */
-
-.c-logo {
-   display: block;
-}
-
-.c-logo svg path {
-   fill: #fff;
-}
-
-.c-logo--dark svg path {
-   fill: #5a52c0;
-}
 
 /* NUMBERED STEPS */
 
