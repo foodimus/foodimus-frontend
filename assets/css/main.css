@@ -266,6 +266,7 @@ h6 {
    border-radius: 3px;
    border: 1px solid rgba(75, 62, 99, 0.4);
    font-size: 0.875em;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .o-input:focus {
@@ -375,6 +376,7 @@ h6 {
 
 .o-section {
    padding: 1.875em 0;
+   position: relative;
 }
 
 .o-section--large-space {
@@ -796,6 +798,42 @@ h6 {
    border-bottom-left-radius: 15px;
    background-color: #050306;
    z-index: 2;
+}
+
+/* PHONE */
+
+.c-bubbles {
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.c-bubbles__bubble {
+   width: 6.125em;
+   height: 6.125em;
+   position: absolute;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   border: 7px solid rgba(75,62,99,0.25);
+}
+
+.c-bubbles__bubble--small {
+   width: 5.125em;
+   height: 5.125em;
+}
+
+.c-bubbles__bubble--large {
+   width: 8.125em;
+   height: 8.125em;
+}
+
+.c-bubbles__bubble-image {
+   width: 100%;
+   height: 100%;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   object-fit: cover;
 }
 
 /* HEADER */
