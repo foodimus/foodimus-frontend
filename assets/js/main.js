@@ -31,6 +31,9 @@ jQuery(document).ready(function($) {
    $(document).on('click', '.js-hamburger', function() {
       $(this).toggleClass('is-open');
       $('.js-header-nav').toggleClass('is-open');
+   })
+   .on('click', '.js-filter-toggler', function() {
+      $(this).parents('.js-filter').toggleClass('is-open');
    });
 
 });

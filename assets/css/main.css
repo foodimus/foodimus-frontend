@@ -6,7 +6,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 
 h1,
 h2,
@@ -151,6 +151,11 @@ h6 {
    margin-bottom: 1.875rem;
 }
 
+.u-extra-large-space-below,
+.u-extra-large-space-below--sm {
+   margin-bottom: 3rem;
+}
+
 .u-space-right,
 .u-space-right--sm {
    margin-right: 1.25rem;
@@ -177,7 +182,8 @@ h6 {
 
    .u-space-below--sm,
    .u-small-space-below--sm,
-   .u-large-space-below--sm {
+   .u-large-space-below--sm,
+   .u-extra-large-space-below--sm {
       margin: 0;
    }
 
@@ -295,6 +301,38 @@ h6 {
    -moz-box-shadow: none;
    -webkit-box-shadow: none;
    box-shadow: none;
+}
+
+.o-checkbox {
+   width: 1em;
+   height: 1em;
+   position: relative;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   border: 1px solid rgba(188,184,232,1);
+   -webkit-appearance: none;
+   appearance: none;
+}
+
+.o-checkbox:focus {
+   outline: none;
+}
+
+.o-checkbox::after {
+   content: "";
+   display: none;
+   position: absolute;
+   top: 2px; right: 2px; bottom: 2px; left: 2px;
+   -moz-border-radius: 1px;
+   -webkit-border-radius: 1px;
+   border-radius: 1px;
+   background-color: #5952c1;
+}
+
+.o-checkbox:checked::after,
+.o-checkbox:checked:active::after {
+   display: block;
 }
 
 /* LOGO */
@@ -434,6 +472,10 @@ h6 {
       padding: 7em 0;
    }
 
+   .c-hero--small {
+      padding: 7em 0 3.125em 0;
+   }
+
    .c-hero--splitted {
       background-image: radial-gradient(circle at 120% 80%, #f59ab5 52%, #5a52c0 0);
    }
@@ -462,6 +504,10 @@ h6 {
 
    .c-hero {
       padding: 9em 0;
+   }
+
+   .c-hero--small {
+      padding: 9em 0 5em 0;
    }
 
    .c-hero--splitted {
@@ -651,7 +697,6 @@ h6 {
    transform: scale(1.1);
 }
 
-
 /* NUMBERED STEPS */
 
 .c-numbered-steps__item {
@@ -678,6 +723,112 @@ h6 {
 
 .c-numbered-steps__label {
    font-weight: bold;
+}
+
+/* FILTER */
+
+.c-filter {
+   padding-bottom: 1.25em;
+   display: block;
+   border-bottom: 1px solid rgba(89,82,193, 0.25);
+}
+
+.c-filter__header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.c-filter__heading {
+   display: block;
+}
+
+.c-filter__toggler {
+   font-size: 1.25em;
+   color: #5952c1;
+   cursor: pointer;
+}
+
+.c-filter__toggler::after {
+   content: "\f078";
+   font-family: "Font Awesome 5 Free";
+   font-weight: bold;
+}
+
+.c-filter.is-open .c-filter__toggler::after {
+   content: "\f077";
+}
+
+.c-filter__list {
+   margin-top: 1.25em;
+   display: none;
+}
+
+.c-filter.is-open .c-filter__list {
+   display: block;
+}
+
+.c-filter__list-item {
+   margin-bottom: 0.75em;
+   display: flex;
+   align-items: center;
+}
+
+.c-filter__label {
+   line-height: 0;
+   color: rgba(75,62,99,0.6);
+}
+
+.c-filter__checkbox {
+   margin-right: 0.5em;
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .c-filter__toggler {
+      display: none;
+   }
+
+   .c-filter__list {
+      display: block;
+   }
+
+}
+
+/* PAGINATION */
+
+.c-pagination__items {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.c-pagination__item {
+   width: 40px;
+   height: 40px;
+   margin: 0 0.3125em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   border: 1px solid #4b3e63;
+   text-align: center;
+   line-height: 0;
+   color: #4b3e63;
+   font-weight: bold;
+}
+
+.c-pagination__item:hover {
+   background-color: rgba(75,62,99,0.1);
+}
+
+.c-pagination__item--current,
+.c-pagination__item--current:hover {
+   background-color: #4b3e63;
+   color: #fff;
+   cursor: default;
 }
 
 /* PHOTO COLLECTION */
@@ -955,6 +1106,45 @@ h6 {
    }
 
 }
+
+/* BIG SEARCH BAR */
+
+.c-bigsearch {
+   padding: 1.5em;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+   background-color: #fff;
+}
+
+.c-bigsearch__section {
+   margin-bottom: 1.25em;
+}
+
+.c-bigsearch__label {
+   margin-bottom: 0.625em;
+   display: block;
+}
+
+.c-bigsearch__input {
+   width: 100%;
+   display: block;
+   border: none;
+}
+
+.c-bigsearch__input:focus {
+   outline: none;
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .c-bigsearch__section {
+      margin-bottom: 0;
+   }
+
+}
+
 
 /* FOOTER */
 
