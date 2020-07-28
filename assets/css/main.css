@@ -79,6 +79,14 @@ h6 {
    font-weight: bold;
 }
 
+.u-text--underlined {
+   text-decoration: underline;
+}
+
+.u-text--shadow {
+   text-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
 .u-text--white {
    color: #fff;
 }
@@ -95,11 +103,10 @@ h6 {
    color: #f59ab5;
 }
 
-/* LINK UTILS */
-
 .u-link:hover {
    text-decoration: underline;
 }
+
 
 /* BACKGROUND UTILS */
 
@@ -187,10 +194,22 @@ h6 {
       margin: 0;
    }
 
+   .u-space-below--md {
+      margin-bottom: 1.25em;
+   }
+
 }
 
 /* Large devices */
 @media (min-width: 992px) {
+
+   .u-space-below--md {
+      margin-bottom: 0;
+   }
+
+   .u-large-space-around--lg {
+      margin: 1.875em;
+   }
 
    .u-space-below--lg {
       margin-bottom: 1.25em;
@@ -204,13 +223,14 @@ h6 {
       margin-bottom: 1.875em;
    }
 
-   .u-container-overlap {
-      margin-right: 6.25em;
+   .u-inner-overlap--left {
+      margin-left: -6.25em;
    }
 
-   .u-inner-overlap {
+   .u-inner-overlap--right {
       margin-right: -6.25em;
    }
+
 
 }
 
@@ -370,6 +390,19 @@ h6 {
 
 .o-nav-arrow--prev {
    margin-right: 0.25em;
+}
+
+.o-nav-arrow::after {
+   font-family: "Font Awesome 5 Free";
+   font-weight: bold;
+}
+
+.o-nav-arrow--prev::after {
+   content: "\f060";
+}
+
+.o-nav-arrow--next::after {
+   content: "\f061";
 }
 
 /* HAMBURGER */
@@ -1156,6 +1189,75 @@ h6 {
       margin-bottom: 0;
    }
 
+}
+
+/* REVIEW SLIDER */
+
+.c-review-slider {
+   position: relative;
+}
+
+.c-review-slider__image {
+   position: relative;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+   box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+   background-color: grey;
+   overflow: hidden;
+}
+
+.c-review-slider__image-image {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   object-fit: cover;
+}
+
+.c-review-slider__image::after {
+   content: "";
+   display: block;
+   padding-bottom: 60%;
+}
+
+.c-review-slider__user-rate {
+   position: absolute;
+   bottom: 1.5em;
+   left: 1.5em;
+}
+
+.c-review-slider__arrows {
+   display: flex;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+
+/* STARS */
+
+.c-stars {
+   display: flex;
+}
+
+.c-stars__item {
+   margin-right: 0.25em;
+   color: lightgrey;
+}
+
+.c-stars__item--filled {
+   color: #f8c444;
+}
+
+.c-stars__item::after {
+   content: "\f005";
+   font-family: "Font Awesome 5 Free";
+   font-weight: bold;
+}
+
+.c-stars__item--shadow::after {
+   text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
 
