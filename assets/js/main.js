@@ -1,5 +1,6 @@
 jQuery(document).ready(function($) {
 
+   // Temporarily file includes
    $(function() {
       var includes = $('[data-include]');
       jQuery.each(includes, function(){
@@ -8,8 +9,8 @@ jQuery(document).ready(function($) {
       });
    });
 
+   // Carousel
    $(function() {
-
       if (typeof Glide != 'undefined') {
          const glide = new Glide('.glide', {
             type: 'carousel',
@@ -28,12 +29,21 @@ jQuery(document).ready(function($) {
       }
    });
 
+   // Hamburger menu
    $(document).on('click', '.js-hamburger', function() {
       $(this).toggleClass('is-open');
       $('.js-header-nav').toggleClass('is-open');
    })
+   // Filter toggler (mobile)
    .on('click', '.js-filter-toggler', function() {
       $(this).parents('.js-filter').toggleClass('is-open');
+   })
+   // Demo autocomplete show and hide
+   .on('focus', '.js-autocomplete-input', function() {
+      $(this).parents('.js-autocomplete').find('.js-autocomplete-results').fadeIn(100);
+   })
+   .on('blur', '.js-autocomplete-input', function() {
+      $(this).parents('.js-autocomplete').find('.js-autocomplete-results').fadeOut(100);
    });
 
 });

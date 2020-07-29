@@ -27,8 +27,8 @@
 
                <div class="col-12 col-md-8 col-lg-5">
 
-                  <h1 class="c-hero__headline u-text--white">Let's search</h1>
-                  <p class="c-hero__subline u-text--white u-large-space-below">Find your favourite meal plan or influencer.</p>
+                  <h1 class="c-hero__headline u-text--white">Search meal plans</h1>
+                  <p class="c-hero__subline u-text--white u-large-space-below">Find meal plans from your favourite influencers.</p>
 
                </div>
 
@@ -36,13 +36,25 @@
 
             <div class="c-bigsearch">
                <div class="row d-flex align-items-center">
-                  <div class="col-lg-9">
-                     <div class="c-bigsearch__section">
-                        <label for="bigsearch_name" class="c-bigsearch__label u-text--light-purple u-text--bold t4">Search meal plans</label>
-                        <input type="text" class="c-bigsearch__input" placeholder="e.g. vegan weight loss or nimai delgado">
+                  <div class="col-lg-4">
+                     <div class="c-bigsearch__section o-autocomplete js-autocomplete">
+                        <label for="bigsearch_1" class="c-bigsearch__label u-text--light-purple u-text--bold t4">Search</label>
+                        <input type="text" class="c-bigsearch__input o-autocomplete__input js-autocomplete-input" placeholder="e.g. weight loss, muscle gain, vegan" id="bigsearch_1">
+                        <ul class="o-autocomplete__results js-autocomplete-results">
+                           <li class="o-autocomplete__result">Massive <strong>weight loss</strong> plan</li>
+                           <li class="o-autocomplete__result">Keto meal plan for fast <strong>weight loss</strong></li>
+                           <li class="o-autocomplete__result">One week <strong>weight loss</strong> plan</li>
+                           <li class="o-autocomplete__result">30 days <strong>weight loss</strong> for women</li>
+                        </ul>
                      </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-4">
+                     <div class="c-bigsearch__section">
+                        <label for="bigsearch_2" class="c-bigsearch__label u-text--light-purple u-text--bold t4">Influencer</label>
+                        <input type="text" class="c-bigsearch__input" placeholder="Search by influencer" id="bigsearch_2">
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
                      <button class="o-btn o-btn--primary o-btn--block">Find meal plans</button>
                   </div>
                </div>

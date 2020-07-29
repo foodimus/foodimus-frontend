@@ -107,7 +107,6 @@ h6 {
    text-decoration: underline;
 }
 
-
 /* BACKGROUND UTILS */
 
 .u-background--green {
@@ -234,7 +233,6 @@ h6 {
    .u-inner-overlap--right {
       margin-right: -6.25em;
    }
-
 
 }
 
@@ -475,7 +473,6 @@ h6 {
 
 .c-hero {
    padding: 6em 0 3em 0;
-   overflow: hidden;
    background-color: #5a52c0;
 }
 
@@ -1180,6 +1177,29 @@ h6 {
 
 }
 
+/* FOOTER */
+
+.c-footer {
+   padding: 4em 0;
+}
+
+.c-footer__logo {
+   width: 8em;
+}
+
+.c-footer__list-item {
+   margin-bottom: 0.5em;
+}
+
+.c-footer__top {
+   padding-bottom: 1.875em;
+}
+
+.c-footer__bottom {
+   padding: 0.625em 0;
+   border-top: 1px solid rgba(89,82,193, 0.25);
+}
+
 /* BIG SEARCH BAR */
 
 .c-bigsearch {
@@ -1187,11 +1207,16 @@ h6 {
    -moz-border-radius: 15px;
    -webkit-border-radius: 15px;
    border-radius: 15px;
+   -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+   box-shadow: 0 1px 10px rgba(0,0,0,0.1);
    background-color: #fff;
 }
 
 .c-bigsearch__section {
    margin-bottom: 1.25em;
+   padding-bottom: 1em;
+   border-bottom: 1px solid rgba(89,82,193, 0.25);
 }
 
 .c-bigsearch__label {
@@ -1214,6 +1239,9 @@ h6 {
 
    .c-bigsearch__section {
       margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      border-right: 1px solid rgba(89,82,193, 0.25);
    }
 
 }
@@ -1287,26 +1315,34 @@ h6 {
    text-shadow: 0 1px 5px rgba(0,0,0,0.3);
 }
 
+/* AUTOCOMPLETE */
 
-/* FOOTER */
-
-.c-footer {
-   padding: 4em 0;
+.o-autocomplete {
+   position: relative;
 }
 
-.c-footer__logo {
-   width: 8em;
+.o-autocomplete__results {
+   padding: 1.25em;
+   display: none;
+   position: absolute;
+   top: 105%;
+   right: 0;
+   left: -1.25em;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   -moz-box-shadow: 0 6px 5px rgba(0,0,0,0.1);
+   -webkit-box-shadow: 0 6px 5px rgba(0,0,0,0.1);
+   box-shadow: 0 6px 5px rgba(0,0,0,0.1);
+   background-color: #fff;
+   z-index: 5;
 }
 
-.c-footer__list-item {
-   margin-bottom: 0.5em;
-}
-
-.c-footer__top {
-   padding-bottom: 1.875em;
-}
-
-.c-footer__bottom {
+.o-autocomplete__result {
    padding: 0.625em 0;
-   border-top: 1px solid rgba(89,82,193, 0.25);
+   cursor: pointer;
+}
+
+.o-autocomplete__result:hover {
+   text-decoration: underline;
 }
