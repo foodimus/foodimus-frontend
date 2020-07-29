@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Search influencers</title>
+
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="noindex"> <!-- Remove this later to prevent search engines from not indexing -->
+
+   </head>
+
+   <body>
+
+      <div data-include="header"></div>
+
+      <div class="c-hero c-hero--small u-space-below">
+
+         <div class="container">
+
+            <div class="row">
+
+               <div class="col-12 col-md-8 col-lg-5">
+
+                  <h1 class="c-hero__headline u-text--white">Search influencers</h1>
+                  <p class="c-hero__subline u-text--white u-large-space-below">Find your favourite food influencers.</p>
+
+               </div>
+
+            </div>
+
+            <div class="c-bigsearch">
+               <div class="row d-flex align-items-center">
+                  <div class="col-lg-8">
+                     <div class="c-bigsearch__section o-autocomplete js-autocomplete">
+                        <label for="bigsearch_1" class="c-bigsearch__label u-text--light-purple u-text--bold t4">Search</label>
+                        <input type="text" class="c-bigsearch__input o-autocomplete__input js-autocomplete-input" placeholder="Search by name, gender, dietary preference, sports.." id="bigsearch_1">
+                        <ul class="o-autocomplete__results js-autocomplete-results">
+                           <li class="o-autocomplete__result">Massive <strong>weight loss</strong> plan</li>
+                           <li class="o-autocomplete__result">Keto meal plan for fast <strong>weight loss</strong></li>
+                           <li class="o-autocomplete__result">One week <strong>weight loss</strong> plan</li>
+                           <li class="o-autocomplete__result">30 days <strong>weight loss</strong> for women</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <button class="o-btn o-btn--primary o-btn--block">Find influencers</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="o-section">
+
+         <div class="container">
+
+            <div class="row">
+
+               <div class="col-lg-3">
+
+                  <div class="u-extra-large-space-below">
+
+                     <nav class="c-filter js-filter u-large-space-below">
+                        <header class="c-filter__header js-filter-toggler">
+                           <span class="c-filter__heading t4 u-text--light-purple u-text--bold">Dietary preference</span>
+                           <div class="c-filter__toggler"></div>
+                        </header>
+                        <ul class="c-filter__list">
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f1c1" />
+                              <label for="f1c1" class="c-filter__label">Gluten free</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f1c2" />
+                              <label for="f1c2" class="c-filter__label">Vegan</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f1c3" />
+                              <label for="f1c3" class="c-filter__label">Vegatarian</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f1c4" />
+                              <label for="f1c4" class="c-filter__label">Keto</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f1c5" />
+                              <label for="f1c5" class="c-filter__label">Paleo</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f1c6" />
+                              <label for="f1c6" class="c-filter__label">Lactose free</label>
+                           </li>
+                        </ul>
+                     </nav>
+
+                     <nav class="c-filter js-filter u-large-space-below">
+                        <header class="c-filter__header js-filter-toggler">
+                           <span class="c-filter__heading t4 u-text--light-purple u-text--bold">Gender</span>
+                           <div class="c-filter__toggler"></div>
+                        </header>
+                        <ul class="c-filter__list">
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f2c1" />
+                              <label for="f2c1" class="c-filter__label">Female</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f2c2" />
+                              <label for="f2c2" class="c-filter__label">Male</label>
+                           </li>
+                        </ul>
+                     </nav>
+
+                     <nav class="c-filter js-filter u-large-space-below">
+                        <header class="c-filter__header js-filter-toggler">
+                           <span class="c-filter__heading t4 u-text--light-purple u-text--bold">Level cook</span>
+                           <div class="c-filter__toggler"></div>
+                        </header>
+                        <ul class="c-filter__list">
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f3c1" />
+                              <label for="f3c1" class="c-filter__label">Beginner</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f3c2" />
+                              <label for="f3c2" class="c-filter__label">Intermediate</label>
+                           </li>
+                           <li class="c-filter__list-item">
+                              <input type="checkbox" class="c-filter__checkbox o-checkbox" id="f3c3" />
+                              <label for="f3c3" class="c-filter__label">Professional</label>
+                           </li>
+                        </ul>
+                     </nav>
+
+                  </div>
+
+               </div>
+
+               <div class="col-lg-9">
+
+                  <div class="row u-space-below">
+
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+                     <div class="col-md-6 col-lg-4">
+                        <div data-include="user" class="u-large-space-below"></div>
+                     </div>
+
+                  </div>
+
+                  <nav class="c-pagination">
+                     <div class="c-pagination__items">
+                        <a href="#" class="c-pagination__item c-pagination__item--prev"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="c-pagination__item">1</a>
+                        <span class="c-pagination__item c-pagination__item--current">2</span>
+                        <a href="#" class="c-pagination__item">3</a>
+                        <a href="#" class="c-pagination__item">4</a>
+                        <a href="#" class="c-pagination__item c-pagination__item--next"><i class="fas fa-chevron-right"></i></a>
+                     </div>
+                  </nav>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <div data-include="footer"></div>
+
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/main.js"></script>
+
+   </body>
+</html>

@@ -754,6 +754,77 @@ h6 {
    transform: scale(1.1);
 }
 
+/* USER */
+
+.c-user {
+   width: 100%;
+   position: relative;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   -moz-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+   -webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+   box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+   background-color: grey;
+   cursor: pointer;
+}
+
+.c-user::after {
+   content: "";
+   padding-bottom: 100%;
+   display: block;
+}
+
+.c-user__inner {
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   z-index: 2;
+}
+
+.c-user__footer {
+   padding-left: 1.25em;
+   padding-right: 1.25em;
+}
+
+.c-user__footer {
+   width: 100%;
+   position: absolute;
+   bottom: 1.25em;
+}
+
+.c-user__title {
+   display: block;
+}
+
+.c-user__cover {
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   overflow: hidden;
+   z-index: 1;
+}
+
+.c-user__cover::before {
+   content: "";
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   background-color: rgba(0,0,0,0.2);
+   z-index: 1;
+}
+
+.c-user__cover-image {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   transition: transform .3s;
+}
+
+.c-user:hover .c-user__cover-image {
+   transform: scale(1.1);
+}
+
 /* NUMBERED STEPS */
 
 .c-numbered-steps__item {
