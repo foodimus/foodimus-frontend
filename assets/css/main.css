@@ -314,7 +314,7 @@ h6 {
    font-weight: bold;
    text-align: center;
    color: #fff;
-   background-color: rgba(255,255,255,0.1);
+   background-color: rgba(0,0,0,0.5);
 }
 
 /* FORM ELEMENTS */
@@ -510,6 +510,13 @@ h6 {
 
 .c-hero--splitted {
    background-image: radial-gradient(circle at 160% 50%, #f59ab5 60%, #5a52c0 0);
+}
+
+.c-hero--background-image {
+   background-size: cover;
+   background-position: center;
+   background-blend-mode: multiply;
+   background-color: rgba(0,0,0,0.3);
 }
 
 .c-hero__headline {
