@@ -117,6 +117,10 @@ h6 {
    background-color: #4b3e63;
 }
 
+.u-background--light-purple {
+   background-color: #5952c1;
+}
+
 .u-background--pink {
    background-color: #f59ab5;
 }
@@ -125,7 +129,7 @@ h6 {
    background-color: #f8c444;
 }
 
-/* LAYOUT & SPACING UTILS */
+/* SPACING UTILS */
 
 .u-space-around,
 .u-space-around--sm {
@@ -487,6 +491,25 @@ h6 {
    padding: 4em 0;
 }
 
+/* LAYOUT */
+
+.o-layout {
+   padding: 1.875em;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+/* LISTS */
+
+.o-list--circle {
+   padding-left: 1.25em;
+   list-style: circle;
+}
+
+.o-list__item {
+   margin-bottom: 0.5em;
+}
 
 /* Medium devices */
 @media (min-width: 768px) {
