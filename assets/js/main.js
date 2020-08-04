@@ -12,20 +12,40 @@ jQuery(document).ready(function($) {
    // Carousel
    $(function() {
       if (typeof Glide != 'undefined') {
-         const glide = new Glide('.glide', {
-            type: 'carousel',
-            perView: 4,
-            gap: 0,
-            breakpoints: {
-               800: {
-                  perView: 2
-               },
-               600: {
-                  perView: 1
+
+         if ($('.js-carousel-mealplans').length > 0) {
+            const mealplanCarousel = new Glide('.js-carousel-mealplans', {
+               type: 'carousel',
+               perView: 4,
+               gap: 0,
+               breakpoints: {
+                  800: {
+                     perView: 2
+                  },
+                  600: {
+                     perView: 1
+                  }
                }
-            }
-         });
-         glide.mount();
+            });
+            mealplanCarousel.mount();
+         }
+
+         if ($('.js-carousel').length > 0) {
+            const carousel = new Glide('.js-carousel', {
+               type: 'carousel',
+               perView: 3,
+               gap: 20,
+               breakpoints: {
+                  800: {
+                     perView: 3
+                  },
+                  600: {
+                     perView: 1
+                  }
+               }
+            });
+            carousel.mount();
+         }
       }
    });
 
