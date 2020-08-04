@@ -525,6 +525,27 @@ h6 {
 
 }
 
+/* DESCRIPTION LIST */
+
+.o-description-list__item {
+   padding: 0.9375em 0;
+   border-bottom: 1px solid rgba(89,82,193, 0.25);
+}
+
+.o-description-list__item > *:first-child {
+   margin-bottom: 0.5em;
+}
+
+.o-description-list__label,
+.o-description-list__value {
+   display: block;
+}
+
+.o-description-list__label {
+   font-weight: bold;
+}
+
+
 /* HERO */
 
 .c-hero {
@@ -754,6 +775,35 @@ h6 {
    }
 
 }
+
+/* LEVEL INDICATOR */
+
+.c-level-indicator {
+   margin: 0 -0.125em;
+   display: flex;
+}
+
+.c-level-indicator__item {
+   margin: 0 0.125em;
+   color: #f64e74;
+}
+
+.c-level-indicator__item::after {
+   content: "\f111";
+   font-family: "Font Awesome 5 Free";
+   font-weight: bold;
+}
+
+.c-level-indicator__item--half::after {
+   content: "\f042";
+   font-weight: bold;
+}
+
+.c-level-indicator__item--empty::after {
+   content: "\f111";
+   font-weight: normal;
+}
+
 
 /* MEAL PLAN */
 
