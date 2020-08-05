@@ -241,6 +241,13 @@ h6 {
 
 }
 
+/* POSITION UTILS */
+
+.u-sticky {
+   position: sticky;
+   top: 1.25em;
+}
+
 /* BORDER UTILS */
 
 .u-border-bottom {
@@ -840,9 +847,11 @@ h6 {
 
 .c-breadcrumb {
    display: block;
+   overflow: hidden;
 }
 
 .c-breadcrumb__items {
+   width: 200%;
    display: flex;
 }
 
@@ -850,8 +859,17 @@ h6 {
    margin-right: 0.3125em;
 }
 
+.c-breadcrumb__link {
+   color: #f05478;
+}
+
 .c-breadcrumb__link:hover {
    text-decoration: underline;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
 }
 
 /* AVATAR */
