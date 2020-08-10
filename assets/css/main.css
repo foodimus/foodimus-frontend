@@ -104,6 +104,10 @@ h6 {
    color: #f59ab5;
 }
 
+.u-text--dark-pink {
+   color: #f05478;
+}
+
 .u-link:hover {
    text-decoration: underline;
 }
@@ -145,6 +149,21 @@ h6 {
 .u-large-space-around,
 .u-large-space-around--sm {
    margin: 1.875rem;
+}
+
+.u-space-above,
+.u-space-above--sm {
+   margin-top: 1.25rem;
+}
+
+.u-small-space-above,
+.u-small-space-above--sm {
+   margin-top: 0.625rem;
+}
+
+.u-large-space-above,
+.u-large-space-above--sm {
+   margin-top: 1.875rem;
 }
 
 .u-space-below,
@@ -448,11 +467,6 @@ h6 {
 
 }
 
-/* Large devices */
-@media (min-width: 992px) {
-
-}
-
 /* PRICE LABEL */
 
 .o-price-label {
@@ -487,7 +501,7 @@ h6 {
    color: #495057;
 }
 
-.o-input-- {
+.o-input--large {
    padding: 0.875em 1em;
    font-size: 0.9375em;
 }
@@ -648,6 +662,20 @@ h6 {
    border-radius: 10px;
 }
 
+/* SIDEBAR */
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .o-sidebar--right {
+      margin-left: 1em;
+      padding-left: 1.875em;
+      border-left: 1px solid rgba(89,82,193, 0.25);
+   }
+
+}
+
+
 /* LISTS */
 
 .o-list--circle {
@@ -659,7 +687,7 @@ h6 {
    margin-bottom: 0.5em;
 }
 
-/* m devices */
+/* Medium devices */
 @media (min-width: 768px) {
 
    .o-section {
@@ -972,6 +1000,65 @@ h6 {
    font-weight: normal;
 }
 
+/* NUTRI ELIPSE */
+
+.o-nutri-ellipse,
+.o-nutri-ellipse__info {
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+}
+
+.o-nutri-ellipse {
+   width: 100%;
+   position: relative;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   border: 3px solid rgba(255,255,255,0.5);
+}
+
+.o-nutri-ellipse::after {
+   content: "";
+   padding-top: 100%;
+   display: block;
+}
+
+.o-nutri-ellipse--yellow {
+   background-color: #f8c444;
+}
+
+.o-nutri-ellipse--green {
+   background-color: #29b49c;
+}
+
+.o-nutri-ellipse--pink {
+   background-color: #f59ab5;
+}
+
+.o-nutri-ellipse--purple {
+   background-color: #4b3e63;
+}
+
+
+.o-nutri-ellipse__info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top: 0.75em; right: 0.75em; bottom: 0.75em; left: 0.75em;
+   background-color: #fff;
+   -moz-box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+   -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+   box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+}
+
+.o-nutri-ellipse__value {
+   font-weight: bold;
+   font-size: 1.25em;
+}
+
 
 /* MEAL PLAN */
 
@@ -1094,6 +1181,49 @@ h6 {
 
 .c-mealplan:hover .c-mealplan__cover-image {
    transform: scale(1.1);
+}
+
+/* PROGRESS */
+
+.c-progress__bar,
+.c-progress__bar-progress {
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+}
+
+.c-progress__title,
+.c-progress__bar-percentage {
+   font-size: 0.875em;
+   color: #fff;
+}
+
+.c-progress--light .c-progress__title,
+.c-progress--light .c-progress__bar-percentage {
+   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.c-progress__title {
+   margin-bottom: 0.25em;
+   display: block;
+}
+
+.c-progress__bar {
+   width: 100%;
+   height: 0.75em;
+   background-color: rgba(255,255,255,0.5);
+}
+
+.c-progress__bar-progress {
+   height: 100%;
+   position: relative;
+   background-color: #fff;
+}
+
+.c-progress__bar-percentage {
+   position: absolute;
+   right: -0.625em;
+   bottom: calc(100% + 0.25em);
 }
 
 /* USER */
