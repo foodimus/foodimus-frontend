@@ -1183,6 +1183,50 @@ h6 {
    transform: scale(1.1);
 }
 
+/* SCHEME */
+
+.c-scheme-item,
+.c-scheme-item__intro,
+.c-scheme-item__info {
+   display: flex;
+   justify-content: space-between;
+}
+
+.c-scheme-item {
+   padding: 1.25em 0;
+   border-bottom: 1px solid rgba(89,82,193, 0.25);
+   align-items: center;
+}
+
+.c-scheme-item__type {
+   margin-bottom: 0.25em;
+   display: block;
+}
+
+.c-scheme-item__title {
+   margin-bottom: 0;
+}
+
+.c-scheme-item__cals {
+   padding: 0.625em;
+   display: flex;
+   align-items: center;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   font-weight: bold;
+   border: 1px solid rgba(78,61,102,0.4);
+}
+
+.c-scheme-item__values {
+   margin-left: 0.625em;
+}
+
+.c-scheme-item__value {
+   margin-bottom: 0.25em;
+   font-size: 0.8125em;
+}
+
 /* PROGRESS */
 
 .c-progress__bar,
