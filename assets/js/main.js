@@ -66,4 +66,9 @@ jQuery(document).ready(function($) {
       $(this).parents('.js-autocomplete').find('.js-autocomplete-results').fadeOut(100);
    });
 
+   // Switcher demo
+   $(document).on('click', '.js-switcher', function() {
+      $(this).toggleClass('is-on is-off');
+   });
+
 });
