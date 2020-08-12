@@ -1075,7 +1075,8 @@ h6 {
    object-fit: cover;
 }
 
-.c-media-slider__main-overlay {
+.c-media-slider__main-overlay,
+.c-media-slider__thumb-overlay {
    position: absolute;
    top: 0; right: 0; bottom: 0; left: 0;
    background-color: rgba(0,0,0,0.3);
@@ -1101,24 +1102,73 @@ h6 {
    padding-top: 70%;
 }
 
+.c-media-slider__thumb-overlay {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.5);
+}
+
 .c-media-slider__thumb-image {
    width: 100%;
    height: 100%;
    object-fit: cover;
+   transition: transform .1s;
 }
 
-/* RECIPE SLIDER DETAILS */
+.c-media-slider__thumb-image:hover {
+   transform: scale(1.1);
+}
 
-.recipe-slider-nutrition {
+/* RECIPE SLIDER */
+
+.recipe-slider {
+   height: 100%;
+}
+
+.recipe-slider__ribbon {
+   position: absolute;
+   top: 0;
+   left: 1.25em;
+}
+
+.recipe-slider__play {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.recipe-slider__play-icon {
+   cursor: pointer;
+   color: rgba(255,255,255,0.8);
+   font-size: 4em;
+}
+
+.recipe-slider__play-icon:hover {
+   color: #fff;
+}
+
+.recipe-slider__nutrition {
    position: absolute;
    left: 1.5em;
    bottom: 1.25em;
 }
 
-.recipe-slider-portions {
+.recipe-slider__portions {
    position: absolute;
-   right: 1.5em;
-   bottom: 1.25em;
+   right: 0.75em;
+   bottom: 0.75em;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+   .recipe-slider__portions {
+      right: 1.5em;
+      bottom: 1.25em;
+   }
+
 }
 
 /* PORTION SWITCHER */
@@ -1309,21 +1359,9 @@ h6 {
    position: absolute;
 }
 
-.c-mealplan__duration {
-   width: 50px;
-   padding: 0.875em 0.5em;
+.c-mealplan__ribbon {
    position: absolute;
    right: 1.25em;
-   -webkit-border-bottom-right-radius: 5px;
-   -webkit-border-bottom-left-radius: 5px;
-   -moz-border-radius-bottomright: 5px;
-   -moz-border-radius-bottomleft: 5px;
-   border-bottom-right-radius: 5px;
-   border-bottom-left-radius: 5px;
-   background-color: #f05478;
-   color: #fff;
-   text-align: center;
-   font-size: 0.9375em;
 }
 
 .c-mealplan__footer {
@@ -1363,6 +1401,23 @@ h6 {
 
 .c-mealplan:hover .c-mealplan__cover-image {
    transform: scale(1.1);
+}
+
+/* RIBBON */
+
+.o-ribbon {
+   width: 50px;
+   padding: 0.875em 0.5em;
+   -webkit-border-bottom-right-radius: 5px;
+   -webkit-border-bottom-left-radius: 5px;
+   -moz-border-radius-bottomright: 5px;
+   -moz-border-radius-bottomleft: 5px;
+   border-bottom-right-radius: 5px;
+   border-bottom-left-radius: 5px;
+   background-color: #f05478;
+   color: #fff;
+   text-align: center;
+   font-size: 0.9375em;
 }
 
 /* MOMENT ICON */
