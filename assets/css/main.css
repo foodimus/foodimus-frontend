@@ -864,7 +864,7 @@ h6 {
 
 }
 
-/*  devices */
+/* Large devices */
 @media (min-width: 992px) {
 
    .c-hero {
@@ -1040,6 +1040,119 @@ h6 {
    }
 
 }
+
+/* MEDIA SLIDER */
+
+.c-media-slider__main,
+.c-media-slider__thumb {
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+   overflow: hidden;
+}
+
+.c-media-slider__main {
+   width: 100%;
+   position: relative;
+   background: grey;
+}
+
+.c-media-slider__main::after {
+   content: "";
+   display: block;
+   padding-top: 60%;
+}
+
+.c-media-slider__main-inner,
+.c-media-slider__thumb-inner {
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.c-media-slider__main-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.c-media-slider__main-overlay {
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   background-color: rgba(0,0,0,0.3);
+}
+
+.c-media-slider__thumbs {
+   margin-left: -0.3125em;
+   margin-right: -0.3125em;
+   display: flex;
+}
+
+.c-media-slider__thumb {
+   width: 20%;
+   margin: 0.625em 0.3125em;
+   position: relative;
+   background-color: grey;
+   cursor: pointer;
+}
+
+.c-media-slider__thumb::after {
+   content: "";
+   display: block;
+   padding-top: 70%;
+}
+
+.c-media-slider__thumb-image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* RECIPE SLIDER DETAILS */
+
+.recipe-slider-nutrition {
+   position: absolute;
+   left: 1.5em;
+   bottom: 1.25em;
+}
+
+.recipe-slider-portions {
+   position: absolute;
+   right: 1.5em;
+   bottom: 1.25em;
+}
+
+/* PORTION SWITCHER */
+
+.o-portion-switcher {
+   display: flex;
+   align-items: center;
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+   border-radius: 8px;
+   overflow: hidden;
+   font-weight: bold;
+}
+
+.o-portion-switcher--light {
+   background-color: rgba(255,255,255,0.4);
+   color: #fff;
+}
+
+.o-portion-switcher__action {
+   padding: 0.5em 0.75em;
+   font-weight: bold;
+   font-size: 1.25em;
+   cursor: pointer;
+}
+
+.o-portion-switcher__action:hover {
+   background-color: rgba(255,255,255,0.5);
+}
+
+.o-portion-switcher__number {
+   margin: 0 0.625em;
+}
+
 
 /* LEVEL INDICATOR */
 
