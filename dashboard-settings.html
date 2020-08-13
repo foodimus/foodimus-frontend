@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Dashboard recipe</title>
+
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="noindex"> <!-- Remove this later to prevent search engines from not indexing -->
+
+   </head>
+
+   <body>
+
+      <div data-include="header-2"></div>
+
+         <div class="container">
+
+            <div class="row">
+
+               <div class="col-lg-3">
+
+                  <div class="o-section">
+                     <h1 class="t2 u-space-below">Settings</h1>
+
+                     <nav class="c-sidenav c-sidenav--sidebar">
+                        <ul class="c-sidenav__list">
+                           <li class="c-sidenav__list-item">User info</li>
+                           <li class="c-sidenav__list-item is-current">Personal settings</li>
+                           <li class="c-sidenav__list-item">Payment</li>
+                           <li class="c-sidenav__list-item">Connect</li>
+                           <li class="c-sidenav__list-item">Messages</li>
+                        </ul>
+                     </nav>
+
+                  </div>
+
+               </div>
+
+               <div class="col-lg-9">
+
+                  <div class="o-sidebar--right">
+
+                     <div class="o-section">
+
+                        <form method="post">
+
+                           <div class="u-space-below">
+
+                              <span class="o-underlined-heading u-large-space-below">Personal information</span>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Name</label>
+                                 <input type="text" class="o-input o-input--regular" value="Darren Buwoli" />
+                              </div>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Date of birth</label>
+                                 <select class="o-dropdown">
+                                    <option>13</option>
+                                 </select>
+                                 <select class="o-dropdown">
+                                    <option>January</option>
+                                 </select>
+                                 <select class="o-dropdown">
+                                    <option>1997</option>
+                                 </select>
+                              </div>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Gender</label>
+                                 <div class="o-form-check o-form-check--inline">
+                                    <input type="radio" class="o-form-check__input o-radio" checked="checked" id="radio_gender_male" name="gender" />
+                                    <label class="o-form-check__label" for="radio_gender_male">Male<label>
+                                 </div>
+                                 <div class="o-form-check o-form-check--inline">
+                                    <input type="radio" class="o-form-check__input o-radio" id="radio_gender_female" name="gender" />
+                                    <label class="o-form-check__label" for="radio_gender_female">Female<label>
+                                 </div>
+                              </div>
+
+                              <div class="d-flex justify-content-end">
+                                 <button class="o-btn o-btn--primary">Save</button>
+                              </div>
+
+                           </div>
+
+                           <div class="u-space-below">
+
+                              <span class="o-underlined-heading u-large-space-below">Body & lifestyle</span>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Lifestyle</label>
+                                 <select class="o-dropdown o-input--regular">
+                                    <option>Very active</option>
+                                 </select>
+                              </div>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Type of body</label>
+                                 <select class="o-dropdown o-input--regular">
+                                    <option>Loose easy weight</option>
+                                 </select>
+                              </div>
+
+                              <div class="d-flex justify-content-end">
+                                 <button class="o-btn o-btn--primary">Save</button>
+                              </div>
+
+                           </div>
+
+                           <div class="u-space-below">
+
+                              <span class="o-underlined-heading u-large-space-below">Food</span>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Allergies</label>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Lactose<label>
+                                 </div>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Nuts<label>
+                                 </div>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Gluten<label>
+                                 </div>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Egg<label>
+                                 </div>
+                              </div>
+
+                              <div class="o-form-group o-form-group--section u-space-below">
+                                 <label class="o-form-label">Dietary preferences</label>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Vegetarian<label>
+                                 </div>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Keto<label>
+                                 </div>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Vegan<label>
+                                 </div>
+                                 <div class="o-form-check">
+                                    <input type="checkbox" class="o-form-check__input o-checkbox" />
+                                    <label class="o-form-check__label">Paleo<label>
+                                 </div>
+                              </div>
+
+                              <div class="d-flex justify-content-end">
+                                 <button class="o-btn o-btn--primary">Save</button>
+                              </div>
+
+                           </div>
+
+                        </form>
+
+                     </div>
+
+                  </div>   
+
+               </div>
+
+            </div>
+
+         </div>
+
+      <div data-include="footer"></div>
+
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/main.js"></script>
+
+   </body>
+</html>
