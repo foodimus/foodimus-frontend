@@ -71,4 +71,18 @@ jQuery(document).ready(function($) {
       $(this).toggleClass('is-on is-off');
    });
 
+   // Nav tab
+   $(document).on('click', '[data-show-tab]', function() {
+      const target = $(this).data('show-tab');
+      $(this).addClass('is-current').siblings('.js-nav-tab').removeClass('is-current');
+      $(target).addClass('is-current').siblings('.js-tab-pane').removeClass('is-current');
+   });
+
+   // Toggler demo
+   $(document).on('click', '.toggler[data-toggle]', function() {
+      const target = $(this).data('toggle');
+      $(this).toggleClass('is-open');
+      $(target).toggle().toggleClass('d-none');
+   });
+
 });
