@@ -2359,6 +2359,7 @@ p {
    cursor: pointer;
 }
 
+.c-sidenav__list-item.is-current,
 .c-sidenav__list-item:hover {
    text-decoration: underline;
 }
