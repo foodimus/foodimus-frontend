@@ -1664,8 +1664,23 @@ p {
 .o-moment-icon {
    width: 3.25em;
    height: 3.25em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
    border-radius: 100%;
    background: #f05478;
+   cursor: pointer;
+}
+
+.o-moment-icon::after {
+   width: 55%;
+   height: 55%;
+   display: block;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
 }
 
 .o-moment-icon--small {
@@ -1678,6 +1693,8 @@ p {
 }
 
 .o-moment-icon--breakfast::after {
+   content: "";
+   background-image: url('../images/breakfast-icon.svg');
 }
 
 .o-moment-icon--snack {
@@ -1685,6 +1702,8 @@ p {
 }
 
 .o-moment-icon--snack::after {
+   content: "";
+   background-image: url('../images/snack-icon.svg');
 }
 
 .o-moment-icon--lunch {
@@ -1692,6 +1711,9 @@ p {
 }
 
 .o-moment-icon--lunch::after {
+   content: "";
+   width: 63%;
+   background-image: url('../images/lunch-icon.svg');
 }
 
 .o-moment-icon--snack-2 {
@@ -1699,6 +1721,8 @@ p {
 }
 
 .o-moment-icon--snack-2::after {
+   content: "";
+   background-image: url('../images/snack-icon.svg');
 }
 
 .o-moment-icon--dinner {
@@ -1706,6 +1730,10 @@ p {
 }
 
 .o-moment-icon--dinner::after {
+   content: "";
+   height: 48%;
+   width: 65%;
+   background-image: url('../images/dinner-icon.svg');
 }
 
 /* SCHEME */
