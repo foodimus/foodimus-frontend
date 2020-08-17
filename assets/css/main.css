@@ -2306,7 +2306,8 @@ p {
    display: block;
    position: relative;
    font-size: 1.125em;
-   color: rgba(89,82,193, 0.7);
+   font-weight: bold;
+   color: #5a52Bf;
 }
 
 .c-header__list-link::after {
@@ -2352,6 +2353,7 @@ p {
    .c-header__list-link {
       padding: 0;
       border-bottom: 1px solid transparent;
+      font-weight: normal;
       transition: 0.2s;
       color: #fff;
    }
