@@ -543,6 +543,9 @@ p {
    border: 1px solid rgba(75,62,99,0.3);
    font-size: 1em;
    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
 
 .o-input:focus,
