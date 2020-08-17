@@ -235,6 +235,14 @@ p {
       margin: 0;
    }
 
+   .u-space-around--md {
+      margin: 1.25em;
+   }
+
+   .u-large-space-around--md {
+      margin: 1.875em;
+   }
+
    .u-space-below--md {
       margin-bottom: 1.25em;
    }
@@ -528,10 +536,10 @@ p {
 .o-input {
    width: 100%;
    padding: 0.625em 0.75em;
-   -moz-border-radius: 3px;
-   -webkit-border-radius: 3px;
-   border-radius: 3px;
-   border: 1px solid rgba(75, 62, 99, 0.4);
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid rgba(75,62,99,0.3);
    font-size: 1em;
    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -875,6 +883,12 @@ p {
    -moz-border-radius: 10px;
    -webkit-border-radius: 10px;
    border-radius: 10px;
+}
+
+.o-layout--spread {
+   height: 100%;
+   display: flex;
+   align-items: center;
 }
 
 /* SIDEBAR */
