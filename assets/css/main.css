@@ -533,9 +533,10 @@ p {
 
 /* FORM ELEMENTS */
 
-.o-input {
+.o-input,
+.o-dropdown {
    width: 100%;
-   padding: 0.625em 0.75em;
+   padding: 0.75em;
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
    border-radius: 5px;
@@ -616,10 +617,6 @@ p {
 
 .o-dropdown {
    padding: 0.625em 2.5em 0.625em 0.75em;
-   -moz-border-radius: 3px;
-   -webkit-border-radius: 3px;
-   border-radius: 3px;
-   border: 1px solid rgba(75,62,99,0.4);
    -moz-appearance: none;
    -webkit-appearance: none;
    appearance: none;
@@ -632,6 +629,15 @@ p {
    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.o-dropdown--inline {
+   width: auto;
+   display: inline-flex;
+}
+
+.o-form-group {
+   margin-bottom: 1.25em;
+}
+
 .o-form-group--section {
    padding-bottom: 1.25em;
    border-bottom: 1px solid rgba(89,82,193, 0.15);
@@ -640,6 +646,10 @@ p {
 .o-form-label {
    display: block;
    margin-bottom: 0.5em;
+}
+
+.o-fieldset-heading {
+   display: block;
 }
 
 .o-form-check {
@@ -2293,7 +2303,6 @@ p {
    display: block;
    position: relative;
    font-size: 1.125em;
-   font-weight: bold;
    color: rgba(89,82,193, 0.7);
 }
 
