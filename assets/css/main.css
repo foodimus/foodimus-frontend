@@ -832,7 +832,7 @@ p {
 }
 
 .c-dropdown-menu {
-   width: 14em;
+   width: 16em;
    display: none;
    position: absolute;
    top: calc(100% + 1em);
@@ -888,6 +888,7 @@ p {
    padding: 0.875em 1.125em;
    display: block;
    border-bottom: 1px solid rgba(89,82,193,0.05);
+   font-size: 1.25em;
    color: rgba(75,62,99,1);
 }
 
@@ -897,6 +898,15 @@ p {
 
 .c-dropdown-menu .c-dropdown-menu__item:last-child {
    border-bottom: none;
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .c-dropdown-menu__item {
+      font-size: 1em;
+   }
+
 }
 
 
