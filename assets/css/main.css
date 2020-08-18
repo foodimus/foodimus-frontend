@@ -112,7 +112,12 @@ p {
    color: #f05478;
 }
 
-.u-link:hover {
+.u-text--link {
+   color: #f05478;
+}
+
+.u-link:hover,
+.u-text--link:hover {
    text-decoration: underline;
 }
 
@@ -2568,6 +2573,10 @@ p {
 
 .c-stars {
    display: flex;
+}
+
+.c-stars--large {
+   font-size: 1.5em;
 }
 
 .c-stars__item {
