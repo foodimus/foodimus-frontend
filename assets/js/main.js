@@ -54,6 +54,15 @@ jQuery(document).ready(function($) {
       $(this).toggleClass('is-open');
       $('.js-header-nav').toggleClass('is-open');
    })
+
+   // Dropdown menu
+   $(document).on('click', '.js-dropdown-toggler', function() {
+      const target = $(this).parents('.js-dropdown-container').find('.js-dropdown-menu');
+      if (target.length > 0) {
+         target.toggleClass('is-open');
+      }
+   })
+
    // Filter toggler (mobile)
    .on('click', '.js-filter-toggler', function() {
       $(this).parents('.js-filter').toggleClass('is-open');

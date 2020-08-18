@@ -13,24 +13,30 @@
       <nav class="c-header__nav c-header__nav--dark js-header-nav">
          <ul class="c-header__list">
             <li class="c-header__list-item">
-               <a href="/search-meal-plans.html" class="c-header__list-link">Today</a>
+               <a href="/dashboard-meal-plan.html" class="c-header__list-link">Today</a>
             </li>
             <li class="c-header__list-item">
-               <a href="/search-influencers.html" class="c-header__list-link is-current">Overview</a>
-            </li>
-            <li class="c-header__list-item c-header__list-item c-header__list-item--last">
-               <a href="#" class="c-header__list-link">Search</a>
+               <a href="/dashboard-overview.html" class="c-header__list-link is-current">Overview</a>
             </li>
          </ul>
       </nav>
 
-      <div class="c-avatar">
-         <a href="#" class="c-avatar__image c-avatar__image--small">
-            <img src="/assets/images/demo/profile-pic-2.jpg" class="c-avatar__image-image" />
-         </a>
+      <div class="d-flex align-items-center js-dropdown-container">
+         <div class="c-avatar c-dropdown-menu-container u-small-space-right">
+            <a href="#" class="c-avatar__image c-avatar__image--small js-dropdown-toggler">
+               <img src="/assets/images/demo/profile-pic-2.jpg" class="c-avatar__image-image" />
+            </a>
+            <nav class="c-dropdown-menu c-dropdown-menu--right js-dropdown-menu">
+               <a href="/dashboard-meal-plan.html" class="c-dropdown-menu__item">Today</a>
+               <a href="/dashboard-overview.html" class="c-dropdown-menu__item">Overview</a>
+               <a href="/dashboard-settings.html" class="c-dropdown-menu__item">Settings</a>
+               <a href="#" class="c-dropdown-menu__item">Logout</a>
+            </nav>
+         </div>
+         <div class="o-dropdown-toggler js-dropdown-toggler">
+            <i class="fas fa-caret-down"></i>
+         </div>
       </div>
-
-      <button class="c-hamburger c-header__hamburger c-header__hamburger--dark js-hamburger"></button>
 
    </div>
 
