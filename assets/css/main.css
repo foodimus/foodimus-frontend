@@ -1887,6 +1887,16 @@ p {
    font-size: 0.9375em;
 }
 
+.page-header {
+   position: relative;
+}
+
+.ribbon-top-right-page {
+   position: absolute;
+   top: -2em;
+   right: 0;
+}
+
 /* MOMENT ICON */
 
 .o-moment-icon {
