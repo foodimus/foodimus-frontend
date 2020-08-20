@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Checkout</title>
+
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="noindex"> <!-- Remove this later to prevent search engines from not indexing -->
+
+   </head>
+
+   <body>
+
+      <div data-include="header-3"></div>
+
+      <div class="o-section">
+
+         <div class="container">
+
+            <div class="row">
+
+               <div class="col-lg-6">
+
+                  <h1 class="t1 u-large-space-below">Checkout</h1>
+
+                  <nav class="c-nav">
+                     <ul class="c-nav__tabs js-nav-tabs">
+                        <li class="c-nav__tab js-nav-tab is-current" data-show-tab="#tab_new_user">New user</li>
+                        <li class="c-nav__tab js-nav-tab" data-show-tab="#tab_existing_user">Existing user</li>
+                     </ul>
+                  </nav>
+
+                  <div class="c-tab-panes">
+
+                     <div class="c-tab-pane js-tab-pane is-current" id="tab_new_user">
+
+                        <div class="c-tab-pane__inner">
+
+                           <form>
+
+                              <div class="u-small-space-below">
+
+                                 <div class="row">
+
+                                    <div class="col-md-6">
+                                       <div class="o-form-group">
+                                          <label class="o-form-label">First name <span class="o-req">*</span></label>
+                                          <input type="text" class="o-input" placeholder="First name" />
+                                       </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                       <div class="o-form-group">
+                                          <label class="o-form-label">Email <span class="o-req">*</span></label>
+                                          <input type="email" class="o-input" placeholder="Email address" />
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+                                 <div class="o-form-group u-small-space-below">
+                                    <label class="o-form-label">Country <span class="o-req">*</span></label>
+                                    <select class="o-dropdown">
+                                       <option>Country</option>
+                                    </select>
+                                 </div>
+
+                                 <div class="o-form-group">
+                                    <label class="o-form-label">Phone</label>
+                                    <input type="phone" class="o-input" placeholder="+31" />
+                                 </div>
+
+                                 <div class="row">
+
+                                    <div class="col-md-6">
+
+                                       <div class="o-form-group">
+                                          <label class="o-form-label">Password <span class="o-req">*</span></label>
+                                          <input type="password" class="o-input" placeholder="Password" />
+                                       </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                       <div class="o-form-group">
+                                          <label class="o-form-label">Repeat password <span class="o-req">*</span></label>
+                                          <input type="password" class="o-input" placeholder="Repeat password" />
+                                       </div>
+
+                                    </div>
+
+                                 </div>
+
+                              </div>
+
+                              <button class="o-btn o-btn--primary o-btn--block o-btn--fat">Checkout &raquo;</button>
+
+                           </form>
+
+                        </div>
+
+                     </div>
+
+                     <div class="c-tab-pane js-tab-pane" id="tab_existing_user">
+
+                        <div class="c-tab-pane__inner">
+
+                           <form>
+
+                              <div class="u-space-below">
+
+                                 <div class="u-small-space-below">
+
+                                    <div class="row">
+
+                                       <div class="col-md-6">
+                                          <div class="o-form-group u-small-space-below">
+                                             <label class="o-form-label">Email <span class="o-req">*</span></label>
+                                             <input type="text" class="o-input" placeholder="Email" />
+                                          </div>
+                                       </div>
+
+                                       <div class="col-md-6">
+                                          <div class="o-form-group">
+                                             <label class="o-form-label">Password <span class="o-req">*</span></label>
+                                             <input type="password" class="o-input" placeholder="Password" />
+                                          </div>
+                                       </div>
+
+                                    </div>
+
+                                 </div>
+
+                                 <button class="o-btn o-btn--primary o-btn--block o-btn--fat">Login and checkout &raquo;</button>
+
+                              </div>
+
+                           </form>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="col-lg-5 offset-lg-1">
+
+                  <div class="u-sticky">
+
+                     <div class="o-layout u-background--purple">
+
+                        <header class="u-space-below">
+                           <h2 class="t3 u-text--white">Your order</h2>
+                        </header>
+
+                        <div class="c-order-visual u-space-below u-box-shadow">
+                           <div class="c-order-visual__inner">
+                              <h3 class="c-order-visual__text t3">Foodimus Premium</h3>
+                              <span class="">Access to all meal plans</span>
+                           </div>
+                        </div>
+
+                        <div class="c-order-table u-text--white">
+                           <div class="c-order-table__row">
+                              <div class="c-order-table__col">Access to all meal plans</div>
+                              <div class="c-order-table__col">$9.95 per month</div>
+                           </div>
+                           <div class="c-order-table__row c-order-table__row--total">
+                              <div class="c-order-table__col">Total</div>
+                              <div class="c-order-table__col">$9.95 per month</div>
+                           </div>
+                        </div>
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <div data-include="footer"></div>
+
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/main.js"></script>
+
+   </body>
+</html>
