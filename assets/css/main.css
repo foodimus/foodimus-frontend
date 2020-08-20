@@ -933,6 +933,13 @@ p {
    background-color: #f05478;
 }
 
+/* LANGUAGE SWITCHER */
+
+.c-language-switcher {
+   width: auto;
+   display: inline;
+}
+
 /* LOGO */
 
 .c-logo {
