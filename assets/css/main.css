@@ -21,19 +21,60 @@ h6 {
    font-weight: bold;
 }
 
+.o-content h1,
+.o-content h2,
+.o-content h3,
+.o-content h4,
+.o-content h5,
+.o-content h6 {
+   margin-bottom: 1.5rem;
+}
+
 p {
    line-height: 1.5em;
 }
 
-.t1 {
+.o-content p,
+.o-content ul,
+.o-content ol,
+.o-content img,
+.o-content iframe {
+   margin-bottom: 1.875rem;
+}
+
+.o-content ul,
+.o-content ol {
+   padding-left: 1.125em;
+}
+
+.o-content ul {
+   list-style: circle;
+}
+
+.o-content ol {
+   list-style: decimal;
+}
+
+.o-content ul li,
+.o-content ol li {
+   margin-bottom: 0.5em;
+}
+
+.t1,
+.o-content h1 {
    font-size: 2.3125rem;
 }
 
-.t2 {
+.t2,
+.o-content h2 {
    font-size: 1.875rem;
 }
 
-.t3 {
+.t3,
+.o-content h3,
+.o-content h4,
+.o-content h5,
+.o-content h6 {
    font-size: 1.5rem;
 }
 
@@ -72,6 +113,34 @@ p {
       font-size: 1.125rem;
    }
 
+}
+
+/* CONTENT */
+
+.o-content img {
+   width: 100%;
+}
+
+/* VIDEO CONTAINER */
+
+.o-video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.o-video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.o-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* TEXT UTILS */
