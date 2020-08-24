@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Login</title>
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="assets/css/normalize.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/fonts.css">
+      <link rel="stylesheet" href="assets/fontawesome/css/fontawesome-all.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="noindex"> <!-- Remove this later to prevent search engines from not indexing -->
+
+   </head>
+
+   <body>
+
+      <div data-include="header-3"></div>
+
+      <div data-include="footer"></div>
+
+      <div class="c-modal is-open">
+
+         <div class="c-modal__container">
+
+            <header class="c-modal__header">
+               <div class="c-modal__close"></div>
+            </header>
+
+            <div class="c-modal__body">
+
+               <div class="o-layout">
+
+                  <div class="c-progress u-large-space-below">
+                     <div class="c-progress__bar">
+                        <div class="c-progress__bar-progress" style="width: 20%;">
+                           <span class="c-progress__bar-percentage">20%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <h2 class="t2 u-large-space-below">Your facts</h2>
+
+                  <div class="row">
+
+                     <div class="col-md-6">
+                        <div class="o-form-group">
+                           <label class="o-form-label">Year of birth</label>
+                           <select class="o-dropdown">
+                              <option>Select year</option>
+                              <option>1993</option>
+                              <option>1994</option>
+                              <option>1995</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <div class="o-form-group">
+                           <label class="o-form-label">Gender</label>
+                           <div class="c-choice c-choice--inline js-choice">
+                              <span class="c-choice__text">Men</span>
+                              <input type="radio" class="c-choice__radio js-choice-radio" value="Men">
+                           </div>
+                           <div class="c-choice c-choice--inline js-choice is-chosen">
+                              <span class="c-choice__text">Women</span>
+                              <input type="radio" class="c-choice__radio js-choice-radio" value="Men">
+                           </div>
+                           <div class="c-choice c-choice--inline js-choice">
+                              <span class="c-choice__text">None</span>
+                              <input type="radio" class="c-choice__radio js-choice-radio" value="Men">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <div class="o-form-group">
+                           <label class="o-form-label">Length</label>
+                           <select class="o-dropdown">
+                              <option>Select your length</option>
+                           </select>
+                        </div>
+                     </div>
+
+                     <div class="col-md-6">
+                        <div class="o-form-group">
+                           <label class="o-form-label">Weight</label>
+                           <select class="o-dropdown">
+                              <option>Select your weight</option>
+                           </select>
+                        </div>
+                     </div>
+
+                  </div>   
+
+               </div>
+
+            </div>
+
+            <footer class="c-modal__footer">
+               <div class="d-flex justify-content-end">
+                  <button class="o-btn o-btn--transparent-dark">Next</button>
+               </div>
+            </footer>
+
+         </div>
+
+      </div>
+
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/main.js"></script>
+
+   </body>
+</html>

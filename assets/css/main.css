@@ -892,6 +892,34 @@ p {
    color: rgba(75,62,99,0.6);
 }
 
+/* CHOICE */
+
+.c-choice {
+   width: 100%;
+   padding: 0.75em;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   border: 1px solid rgba(90,78,193,0.4);
+   cursor: pointer;
+}
+
+.c-choice--inline {
+   width: auto;
+   display: inline-block;
+}
+
+.c-choice:hover {
+   border: 1px solid rgba(90,78,193,0.7);
+}
+
+.c-choice.is-chosen {
+   border: 2px solid #5952c1;
+}
+
+.c-choice__radio {
+   display: none;
+}
 
 /* SWITCHER */
 
