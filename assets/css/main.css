@@ -901,11 +901,13 @@ p {
    -webkit-border-radius: 5px;
    border-radius: 5px;
    border: 1px solid rgba(90,78,193,0.4);
+   text-align: center;
    cursor: pointer;
 }
 
 .c-choice--inline {
    width: auto;
+   margin-bottom: 0.3125em;
    display: inline-block;
 }
 
@@ -913,12 +915,17 @@ p {
    border: 1px solid rgba(90,78,193,0.7);
 }
 
-.c-choice.is-chosen {
+.c-choice.is-checked {
    border: 2px solid #5952c1;
 }
 
-.c-choice__radio {
+.c-choice__check {
    display: none;
+}
+
+.c-choice__headline {
+   margin-bottom: 0.3125em;
+   display: block;
 }
 
 /* SWITCHER */
