@@ -2974,10 +2974,12 @@ p {
    top: 0; right: 0; bottom: 0; left: 0;
    background-color: rgba(75,62,99,0.77);
    z-index: 30;
+   overflow-y: auto;
 }
 
 .c-modal__container {
    width: 100%;
+   /* max-height: 95%; */
    -moz-border-radius: 10px;
    -webkit-border-radius: 10px;
    border-radius: 10px;
@@ -3007,7 +3009,12 @@ p {
 }
 
 .c-modal__body {
-   padding: 0.625em 1.25em 4em 1.25em;
+   padding: 0 1.25em 4em 1.25em;
+}
+
+.c-modal__scroll {
+   /* max-height: 22em;
+   overflow: auto; */
 }
 
 .c-modal__footer {
@@ -3020,6 +3027,10 @@ p {
 
    .c-modal__container {
       width: 900px;
+   }
+
+   .c-modal__body {
+      padding: 0 2.5em 4em 2.5em;
    }
 
 }
