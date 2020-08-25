@@ -2923,6 +2923,42 @@ p {
    text-decoration: underline;
 }
 
+/* NAV DOTS */
+
+.c-nav-dots {
+   display: flex;
+   justify-content: center;
+}
+
+.c-nav-dot {
+   width: 1.25em;
+   height: 1.25em;
+   margin: 0 0.25em;
+   padding: 2px;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   border: 1px solid #bcb8e8;
+   cursor: pointer;
+}
+
+.c-nav-dot::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   display: block;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+}
+
+.c-nav-dot:hover::after {
+   background-color: rgba(75,62,99,0.3);
+}
+
+.c-nav-dot.is-current::after {
+   background-color: rgba(75,62,99,1);
+}
 
 /* TOGGLER */
 
