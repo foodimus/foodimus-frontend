@@ -407,6 +407,32 @@ p {
    border-bottom: 1px solid rgba(89,82,193, 0.25);
 }
 
+.u-border-top--sm {
+   border-top: 1px solid rgba(89,82,193, 0.25);
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+   .u-border-top--sm {
+      border-top: none;
+   }
+
+   .u-border-top--md {
+      border-top: 1px solid rgba(89,82,193, 0.25);
+   }
+
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .u-border-top--md {
+      border-top: none;
+   }
+
+}
+
 /* GENERAL UTILS */
 
 .u-box-shadow {
@@ -2884,7 +2910,6 @@ p {
 /* FOOTER */
 
 .c-footer {
-   margin-top: 2.5em;
    padding: 4em 0;
    border-top: 1px solid rgba(89,82,193, 0.25);
 }
