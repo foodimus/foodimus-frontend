@@ -2445,14 +2445,14 @@ p {
 /* NUMBERED STEPS */
 
 .c-numbered-steps__item {
-   margin-bottom: 1.875em;
+   margin-bottom: 2.5em;
    display: flex;
    align-items: center;
 }
 
 .c-numbered-steps__number {
-   width: 35px;
-   height: 35px;
+   width: 2.5em;
+   height: 2.5em;
    margin-right: 0.875em;
    display: flex;
    justify-content: center;
@@ -2462,13 +2462,17 @@ p {
    -webkit-border-radius: 100%;
    border-radius: 100%;
    text-align: center;
+   font-size: 1.125em;
    color: #fff;
    background-color: #f8c444;
 }
 
-.c-numbered-steps__label {
+.c-numbered-steps__headline {
+   margin-bottom: 0.25em;
+   display: block;
    font-weight: bold;
 }
+
 
 /* FILTER */
 
