@@ -1895,6 +1895,27 @@ p {
    padding-bottom: 40%;
 }
 
+.c-mealplan__lock {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0; right: 0; bottom: 0; left: 0;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background-color: rgba(75,62,99,0.77);
+   z-index: 3;
+}
+
+.c-mealplan__lock::after {
+   content: "\f023";
+   font-family: "Font Awesome 5 Free";
+   font-weight: bold;
+   font-size: 2.5em;
+   color: #fff;
+}
+
 .c-mealplan__inner {
    position: absolute;
    top: 0; right: 0; bottom: 0; left: 0;
