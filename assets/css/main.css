@@ -2518,12 +2518,18 @@ p {
    align-items: center;
 }
 
+.c-filter__list-item:hover {
+   text-decoration: underline;
+}
+
 .c-filter__label {
    line-height: 0;
    color: rgba(75,62,99,0.6);
 }
 
 .c-filter__checkbox {
+   width: 1.25em;
+   height: 1.25em;
    margin-right: 0.5em;
 }
 
