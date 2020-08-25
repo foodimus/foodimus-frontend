@@ -94,4 +94,19 @@ jQuery(document).ready(function($) {
       $(target).toggle().toggleClass('d-none');
    });
 
+   // Hover text demo
+   (function() {
+
+      let defaultText = '';
+      let hoverText = '';
+
+      $(document).on('mouseenter', '[data-hover-text]', function() {
+         defaultText = $(this).text();
+         hoverText = $(this).data('hover-text');
+         $(this).text(hoverText);
+      }).on('mouseleave', '[data-hover-text]', function() {
+         $(this).text(defaultText);
+      });
+   })();
+
 });
