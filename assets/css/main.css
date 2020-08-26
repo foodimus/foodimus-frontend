@@ -2687,6 +2687,7 @@ p {
    -webkit-border-radius: 15px;
    border-radius: 15px;
    background-color: grey;
+   overflow: hidden;
    z-index: 1;
 }
 
