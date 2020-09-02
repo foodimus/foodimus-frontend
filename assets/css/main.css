@@ -3292,7 +3292,7 @@ p {
 /* TERMINAL */
 
 .c-terminal {
-   padding: 5% 1.25em 0 1.25em;
+   padding: 2.5em 1.25em 0 1.25em;
    display: flex;
    justify-content: center;
    align-items: flex-start;
