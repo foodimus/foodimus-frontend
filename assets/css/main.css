@@ -3430,3 +3430,82 @@ p {
    }
 
 }
+
+
+/* NOTIFICATIONS */
+
+.c-notifications {
+   border-top: 1px solid rgba(89,82,193, 0.25);
+}
+
+.c-notification {
+   padding: 1em 0.625em;
+   display: flex;
+   flex-wrap: wrap;
+   border-bottom: 1px solid rgba(89,82,193, 0.25);
+   cursor: pointer;
+}
+
+.c-notification:hover {
+   background-color: rgba(89,82,193,0.04);
+}
+
+.c-notification__content {
+   width: 100%;
+   margin-bottom: 0.5em;
+   display: flex;
+   align-items: center;
+}
+
+.c-notification__image {
+   width: 1.875em;
+   height: 1.875em;
+   margin-right: 0.625em;
+   -moz-border-radius: 100%;
+   -webkit-border-radius: 100%;
+   border-radius: 100%;
+   background-color: grey;
+}
+
+.c-notification__message {
+   width: 90%;
+   font-size: 0.875em;
+}
+
+.c-notification__date {
+   width: 100%;
+   font-size: 0.875em;
+   color: rgba(75,62,99,0.6);
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+
+   .c-notification {
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .c-notification__content {
+      width: auto;
+      margin-bottom: 0;
+   }
+
+   .c-notification__message {
+      width: auto;
+   }
+
+   .c-notification__date {
+      width: auto;
+   }
+
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+
+   .c-notification__message {
+      font-size: 0.9375em;
+   }
+
+}
