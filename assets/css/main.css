@@ -558,6 +558,36 @@ p {
    font-family: "Font Awesome 5 Free";
 }
 
+.o-btn--social {
+   position: relative;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+}
+
+.o-btn--social::before {
+   content: "";
+   display: block;
+   position: absolute;
+   font-family: "Font Awesome 5 Brands";
+   color: #fff;
+}
+
+.o-btn--facebook {
+   background-color: #3b5998;
+}
+
+.o-btn--facebook::before {
+   content: "\f082";
+}
+
+.o-btn--google {
+   background-color: #4385f3;
+}
+
+.o-btn--google::before {
+   content: "\f1a0";
+}
 
 /* PROMO */
 
