@@ -143,6 +143,23 @@ p {
    height: 100%;
 }
 
+/* ALERTS */
+
+.o-alert {
+   padding: .75rem 1.25rem;
+   position: relative;
+   -moz-border-radius: .25rem;
+   -webkit-border-radius: .25rem;
+   border-radius: .25rem;
+   border: 1px solid transparent;
+}
+
+.o-alert--primary {
+   color: #004085;
+   background-color: #cce5ff;
+   border-color: #b8daff;
+}
+
 /* TEXT UTILS */
 
 .u-text--center {
