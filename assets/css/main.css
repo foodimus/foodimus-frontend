@@ -2820,6 +2820,30 @@ p {
    object-fit: cover;
 }
 
+/* RELATIVE WRAPPER */
+
+.c-relative-wrapper {
+   position: relative;
+}
+
+/* TOP BAR */
+
+.c-top-bar,
+.c-top-bar__link {
+   color: #fff;
+   display: block;
+}
+
+.c-top-bar {
+   padding: 0.8125em 0;
+   background-color: #f05477;
+   text-align: center;
+}
+
+.c-top-bar__link:hover {
+   text-decoration: underline;
+}
+
 /* HEADER */
 
 .c-header {
