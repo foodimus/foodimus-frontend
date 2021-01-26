@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
             gap: 0,
             breakpoints: {
                800: {
-                  perView: 2
+                  perView: 3
                },
                600: {
                   perView: 2
