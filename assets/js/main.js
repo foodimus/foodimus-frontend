@@ -13,6 +13,26 @@ jQuery(document).ready(function($) {
    $(function() {
       if (typeof Glide != 'undefined') {
 
+         // Glide for planning days
+         const options = {
+            type: 'carousel',
+            perView: 4,
+            gap: 0,
+            breakpoints: {
+               800: {
+                  perView: 2
+               },
+               600: {
+                  perView: 2
+               }
+            }
+         };
+         const planningCarousels = document.querySelectorAll(".js-glide-planning-days");
+         Object.values(planningCarousels).map(carousel => {
+            new Glide(carousel, options).mount();
+         });
+
+         // Glide for meal plans
          if ($('.js-carousel-mealplans').length > 0) {
             const mealplanCarousel = new Glide('.js-carousel-mealplans', {
                type: 'carousel',
@@ -46,6 +66,7 @@ jQuery(document).ready(function($) {
             });
             carousel.mount();
          }
+
       }
    });
 
