@@ -2206,6 +2206,22 @@ p {
    font-weight: 600;
 }
 
+.c-planning__day-toggler {
+   cursor: pointer;
+}
+
+.c-planning__day-toggler::before {
+   content: "\f13a";
+   display: block;
+   font-weight: bold;
+   font-size: 1.5em;
+   font-family: "Font Awesome 5 Free";
+}
+
+.c-planning__day-toggler.is-open::before {
+   content: "\f139";
+}
+
 .c-planning__day-macros {
    display: flex;
 }
@@ -2232,7 +2248,13 @@ p {
 }
 
 .c-planning__day-meals {
+   -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.05);
+   -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.05);
    box-shadow: inset 0 1px 10px rgba(0,0,0,0.05);
+}
+
+.c-planning__day-meals.is-closed {
+   display: none;
 }
 
 .c-planning__meal {
