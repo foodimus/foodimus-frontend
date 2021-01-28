@@ -3755,7 +3755,6 @@ p {
 
 }
 
-
 /* NOTIFICATION BULLET */
 
 .o-notification-bullet-container {
@@ -3780,4 +3779,75 @@ p {
    font-weight: bold;
    line-height: 0;
    color: #fff;
+}
+
+/* CHECKMARK LIST */
+
+.o-checkmark-list__item {
+   margin-bottom: 1.25em;
+   padding-left: 1.75em;
+   position: relative;
+   line-height: 1.25em;
+   font-weight: 400;
+}
+
+.o-checkmark-list__item::before {
+   content: "\f058";
+   position: absolute;
+   left: 0;
+   font-family: "Font Awesome 5 Free";
+   font-weight: bold;
+   font-size: 1.125em;
+   color: #5953c1;
+}
+
+.o-checkmark-list__item--last {
+   margin-bottom: 0;
+}
+
+/* EXPLAIN BANNER */
+
+.c-explain-banner {
+   -moz-border-radius: 8px;
+   -webkit-border-radius: 8px;
+   border-radius: 8px;
+   position: relative;
+   border: 1px solid #e3e1e6;
+   -moz-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.07);
+   -webkit-box-shadow: 0 3px 10px 0 rgba(0,0,0,0.07);
+   box-shadow: 0 3px 10px 0 rgba(0,0,0,0.07);
+   background: #fff;
+   background-image: url('../images/phone-angled.png'), url('../images/onion.png'), url('../images/tomato.jpg'), url('../images/bean.jpg');
+   background-position: 13em 1em, 12em -5em, 5em 18em, -8em 14em;
+   background-repeat: no-repeat;
+   background-size: 90%, 70%, 100%, 70%;
+}
+
+.c-explain-banner__content  {
+   width: 16em;
+   padding: 3em 0 4em 1.25em;
+}
+
+.c-explain-banner__backgrounds.
+.c-explain-banner__background {
+   position: absolute;
+}
+
+.c-explain-banner__background--phone {
+   right: -1em;
+}
+
+@media (min-width: 768px) {
+
+   .c-explain-banner {
+      background-position: 110% -3em, 65% -6em, 75% 10em, -7em 9em;
+      background-repeat: no-repeat;
+      background-size: 45%, 37%, 40%, 30%;
+   }
+
+   .c-explain-banner__content  {
+      width: 45%;
+      padding: 2.5em 0 2.5em 2.5em;
+   }
+
 }
